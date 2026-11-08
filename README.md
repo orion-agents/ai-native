@@ -1,31 +1,33 @@
 # ai-native
 
-**忘记工作目录，忘记繁琐调度。以 AI-native 的方式思考和行动。**
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-## 为什么需要新的工作范式
+**Forget the working directory. Forget the orchestration overhead. Think and act in an AI-native way.**
 
-Agent 正在迅速增加，但我们仍常用管理人的方式管理它们：逐个分配任务、指定工作目录、跟踪会话、手工协调依赖，再把结果搬回主流程。这像是用管理客运站的方式管理一座机场——当飞机和航班越来越多，靠人逐架安排每个动作，系统很快就会堵塞。
+## Why we need a new way of working
 
-我们需要把管理权限下放给 AI Agent。人负责定义要抵达的目的地、规则和风险边界；Agent 在授权范围内自行规划、拆解、协作、执行和检查。管理者不再逐步遥控每个 Agent，而是管理目标、策略和结果。
+The number of AI agents is growing fast, but we still manage them like people: assign tasks one by one, prescribe working directories, track sessions, coordinate dependencies by hand, and move results back into the main workflow. It is like managing an airport with the methods of a bus station. As aircraft and flights multiply, manually directing every move becomes a bottleneck.
 
-## 什么是 AI-native 工作方式
+We need to delegate management authority to AI agents. People define the destination, the rules, and the risk boundaries. Within that mandate, agents plan, break down work, collaborate, execute, and verify. Managers focus on goals, policies, and outcomes instead of remotely directing every step.
 
-AI-native 不是给旧流程再加一层聊天界面或调度器，而是从根本上改变工作的组织方式：
+## What AI-native work means
 
-- **从意图开始**：描述要实现的结果、约束和验收标准，而不是先决定在哪个目录、由哪个工具、按什么人工步骤完成。
-- **授予行动权**：Agent 可在清楚的权限、预算和风险边界内决定如何拆解工作、选择协作者、安排顺序并处理常见故障。
-- **让协作组织动态形成**：根据任务需要组合 Agent；独立工作可以并行，有依赖的工作按顺序衔接。Agent 数量增长时，不要求人同步增加逐项调度工作。
-- **以可验证的结果协作**：通过任务说明、共享状态、补丁、证据和验收标准交接工作，不依赖复制整段对话或人工盯守每个会话。
-- **保留人的方向和边界控制**：人设定目标与规则；不可逆或高影响的操作按授权要求升级确认。Agent 在边界内自主行动，并对结果负责。
+AI-native is not another chat interface or scheduler layered onto the old process. It changes how work is organized:
 
-“忘记工作目录”不是抛弃工作记录，而是不再让目录成为工作的入口和管理对象。工作状态与产物应可追踪、可恢复、可交接；文件夹和工作树只是执行载体。
+- **Start with intent.** Describe the outcome, constraints, and acceptance criteria instead of deciding up front which directory, tool, or manual sequence must be used.
+- **Grant agency.** Within clear permissions, budgets, and risk boundaries, agents can choose how to decompose work, select collaborators, sequence tasks, and handle routine failures.
+- **Let teams form around the work.** Bring agents together as the task requires. Independent work can happen in parallel; dependent work proceeds in sequence. Adding agents should not require adding a matching amount of human dispatch work.
+- **Coordinate through verifiable results.** Hand work off through task definitions, shared state, patches, evidence, and acceptance criteria—not copied conversation histories or constant human monitoring.
+- **Keep human control over direction and boundaries.** People set goals and policies. Actions that are irreversible or high impact require escalation when the authorization rules call for it. Agents act autonomously within their mandate and remain accountable for outcomes.
 
-## 当前的协作参考
+“Forget the working directory” does not mean discarding work records. It means the directory is no longer the entry point or the object of management. Work state and artifacts should remain traceable, recoverable, and transferable; folders and worktrees are execution details.
 
-`ai-native` 当前采用 Manager—Worker 协作作为实践起点：用户提出目标，Manager 明确范围和完成条件，再把边界清楚的子任务交给合适的 Worker。需要并行时，各 Worker 在隔离的工作区处理独立任务；交付时提供简明结论、修改或补丁、验证证据以及未解决的问题。Manager 复核结果、处理冲突并整合交付。
+## A collaboration pattern in practice
 
-这套做法已经包含 AI-native 的关键方向：人给目标，Agent 组织执行；工作以任务和结果为中心；Worker 有明确授权；Manager 把精力放在路由、质量和风险上，而不是转发每条指令。它是持续演进的参考实践，不是要求所有任务都使用固定角色或固定目录。
+The current `ai-native` project uses Manager–Worker collaboration as a starting point. A user states an outcome. The Manager clarifies scope and completion criteria, then assigns bounded subtasks to suitable Workers. When parallel work is useful, each Worker handles an independent task in an isolated workspace. Workers return a concise summary, changes or patches, verification evidence, and unresolved questions. The Manager reviews the work, resolves conflicts, and integrates the result.
 
-## 愿景
+This practice reflects the core direction of AI-native work: people provide intent, agents organize execution; work is centered on tasks and outcomes; Workers receive explicit authority; and Managers focus on routing, quality, and risk instead of relaying every instruction. It is an evolving reference, not a mandate to use fixed roles or directories for every task.
 
-让人只需说明“要去哪里”和“哪些规则必须遵守”，AI Agent 就能组织所需能力，自主完成从理解、规划、协作到验证的工作。人从繁琐调度中解放出来，专注方向、判断和创造；Agent 获得足够的管理权限，在可靠边界内把事情真正做成。
+## Vision
+
+People should be able to say where they want to go and which rules must hold, then trust AI agents to assemble the right capabilities and carry the work from understanding and planning through collaboration and verification. People can focus on direction, judgment, and creativity. Agents get enough authority to make things happen within reliable boundaries.
